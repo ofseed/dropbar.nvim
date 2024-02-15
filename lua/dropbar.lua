@@ -44,9 +44,9 @@ function _G.dropbar.get_dropbar_str()
   return tostring(_G.dropbar.bars[buf][win])
 end
 
----Setup dropbar
+---Start dropbar
 ---@param opts dropbar_configs_t?
-local function setup(opts)
+local function start(opts)
   if 1 ~= vim.fn.has('nvim-0.10.0') then
     vim.api.nvim_err_writeln('dropbar.nvim requires at least nvim-0.10.0')
     return
@@ -155,5 +155,5 @@ local function setup(opts)
 end
 
 return {
-  setup = setup,
+  start = start,
 }

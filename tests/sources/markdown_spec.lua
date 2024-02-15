@@ -3,7 +3,7 @@ local source_markdown = require('dropbar.sources.markdown')
 
 describe('[source][markdown]', function()
   before_each(function()
-    dropbar.setup({
+    dropbar.start({
       bar = {
         sources = {
           source_markdown,

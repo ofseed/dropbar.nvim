@@ -76,7 +76,7 @@ local source = {
   end,
 }
 
-dropbar.setup({
+dropbar.start({
   icons = {
     ui = {
       bar = {
