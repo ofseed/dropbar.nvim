@@ -15,6 +15,6 @@ vim.opt.rtp:prepend(
     )
 )
 vim.cmd.luafile('tests/utils.lua')
-require('dropbar').start()
+require('dropbar').setup()
 
 vim.o.swapfile = false

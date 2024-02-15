@@ -44,6 +44,12 @@ function _G.dropbar.get_dropbar_str()
   return tostring(_G.dropbar.bars[buf][win])
 end
 
+---Setup dropbar with options, do not start directly
+---@param opts dropbar_configs_t?
+local function setup(opts)
+  configs.set(opts)
+end
+
 ---Start dropbar
 ---@param opts dropbar_configs_t?
 local function start(opts)
@@ -155,5 +161,6 @@ local function start(opts)
 end
 
 return {
+  setup = setup,
   start = start,
 }
